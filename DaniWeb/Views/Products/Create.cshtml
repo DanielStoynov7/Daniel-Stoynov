@@ -1,0 +1,11 @@
+﻿@using Dani.Models.Models.Products
+@model CreateProductModel 
+
+<h1>CREATE PRODUCTS</h1>
+<form  asp-controller="Products" asp-action="Create">
+    <input asp-for="@Model.Name" />
+
+    <button type="submmit">Sumbit</button>
+    
+</form>
+

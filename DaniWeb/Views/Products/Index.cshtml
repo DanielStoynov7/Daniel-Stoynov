@@ -1,0 +1,12 @@
+﻿@using Dani.Models.Models.Products
+
+@model IEnumerable<ProductViewModel>
+
+@foreach(var product in Model)
+{
+    <div>@product.Name</div>
+}
+
+<a asp-controller="Products" asp-action="Create" class="btn btn-secondary border form-control">
+    Create
+</a>
